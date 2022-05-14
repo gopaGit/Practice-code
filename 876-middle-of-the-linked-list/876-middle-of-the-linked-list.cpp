@@ -19,7 +19,7 @@ public:
             slow=slow->next;
             fast=fast->next->next;
         }
-        head=slow;
+     //   head=slow;
         /*
         if(current->next==NULL) return head;
         
@@ -36,6 +36,6 @@ public:
             if(mid--==0) {head=current;break;}
             else current=current->next;
         }*/
-        return head;
+        return slow;
     }
 };
