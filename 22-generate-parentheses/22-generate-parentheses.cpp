@@ -22,10 +22,10 @@ public:
     
     vector<string> generateParenthesis(int n) {
         vector<string> v;
-      //  int open=n;
-        //int close=n;
-        //string op=" ";
-        solve(n,n,"",v);
+        int open=n;
+        int close=n;
+        string op="";
+        solve(open,close,op,v);
         return v;
         
     }
